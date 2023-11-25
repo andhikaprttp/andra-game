@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Balap Mobil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Dhika Game</h1>
+  </header>
+  <main>
+    <div id="playerInfo"></div>
+    <canvas id="gameCanvas" width="480" height="320"></canvas>
+    
+    <div id="controls">
+        <button onclick="moveMobil('left')">Kiri</button>
+        <button onclick="moveMobil('right')">Kanan</button>
+    </div>
+
+    <div id="gameOver">
+        <div id="gameOverText">Game Over</div>
+        
+        <div id="playerScore"></div>
+        <button id="restartButton" onclick="restartGame()">Restart</button>
+    </div>
+    </main>
+    <footer>
+      <br>
+      <a href="https://andhikapratamap.hashnode.dev">andhika pratama putra</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

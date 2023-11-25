@@ -1,0 +1,93 @@
+  body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            repeat-y;
+            overflow: hidden;
+            flex-direction: column;
+            position: relative;
+        }
+
+        canvas {
+            border: 2px solid #FFF;
+            display: block;
+            margin: 20px auto;
+            background-color: #000;
+            max-width: 100%;
+        }
+
+        #gameCanvas {
+            position: relative;
+        }
+
+        #gameCanvas::after {
+            content: "";
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 50px;
+            height: 75px;
+            top: 245px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+        #controls {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            font-size: 16px;
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        #playerInfo {
+            color: #FFF;
+            font-size: 18px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        #gameOver {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            display: none;
+        }
+
+        #gameOverText {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        #restartButton {
+            font-size: 16px;
+            padding: 10px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        h1 {
+          color:#4CAF50;
+          text-align: center;
+        }
+        a {
+          text-align: center;
+          color:#2521e3;
+          text-decoration: none;
+        }
